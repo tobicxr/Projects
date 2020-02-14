@@ -1,4 +1,4 @@
 var motor = document.querySelector('#motor');
-motor.addEventListener('fusing', function (evt) {
+motor.addEventListener('player', function (evt) {
   console.log('I clicked on motor ');
 });
