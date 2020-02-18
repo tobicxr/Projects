@@ -7,7 +7,8 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="/dist/aframe-master.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css">
+    
     <!-- <script>
       AFRAME.registerComponent('cursor-listener', {
       init: function () {
@@ -58,20 +59,24 @@
             animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
             animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 10; from: 0.1 0.1 0.1; to: 1 1 1"
             animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 10; to: 1 1 1">
-
           </a-entity>
         </a-entity>
         
        
         <a-circle  id="button00"  cursor-listener-0 color="blue" segments="6" radius="0.15" position="0.5 -0.5 -4" rotation="0 -10 0"></a-circle>
         
-        <a-entity geometry="primitive: circle; segments:6; radius:0.15" 
+        <a-entity geometry="primitive: circle; segments:6; radius:0.05"
+                  cursor-listener-0 
                   material="color: blue" 
-                  position="-0.5 -0.5 -4"
-                  text="color: white; align: center; value: this; align:center; font: https://cdn.aframe.io/fonts/DejaVu-sdf.fnt; width: 3"
+                  position="-0.5 -0.5 -1.25"
+                  text="
+                        value: \n\nAbc撮影ポイント; 
+                        align: center; anchor: center; width: 1.5; color: green; alphaTest:0.7;
+                        font: https://cdn.glitch.com/4cf373ea-dd62-49d5-803a-0c82d01adbe9%2Fmp1mm16tir-page1.fnt; 
+                        fontImage:https://cdn.glitch.com/4cf373ea-dd62-49d5-803a-0c82d01adbe9%2Fmp1mm16tir-page1.png;"
                   >
                   
-                </a-entity>
+        </a-entity>
       
     </a-scene>
   </body>
